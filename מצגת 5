@@ -1,0 +1,104 @@
+import java.util.Scanner;
+import java.util.Random;
+
+public class Functions {
+	//1
+	public static void f1() {
+	Scanner scan = new Scanner(System.in);
+	System.out.println("Enter your name:");
+	String name = scan.next();
+	System.out.println("Shalom, " + name);
+	}
+	//2
+	public static void f2(int x) {
+		int y = x/5;
+		System.out.println(y);
+	}
+	//3
+	public static int f3(int _x,int _y) {
+		int z = _x * _y;
+		return(z);
+	}
+	//4
+	public static int f4(int q,int w, int e) {
+		int qwe = q * w * e;
+		System.out.println(qwe);
+		int t = qwe/3;
+		return(t);
+	}
+	//5
+	public static void f5(double radius) {
+		System.out.println("circle p = " + (2 * 3.14 * radius));
+		double radiusPow = Math.pow(radius,2);
+		System.out.println("circle s = " + (3.14 * radiusPow));
+	}
+	//6
+	public static double f6(int a, int b) {
+		double c_Pow = (Math.pow(a,2) + Math.pow(b,2));
+		double c = Math.sqrt(c_Pow);
+		return(c);
+	} 
+	//7
+	public static void f7(String I, String II, String III) {
+		System.out.println(III + II + I);
+	}
+	//8
+	public static double f8(int a1, int n, int d) {
+		double an = (a1 + (n - 1) * d);
+		return(an);
+	}
+	//9
+	public double f9(String str) {
+		int len = str.length();
+		return(Math.pow(len, 2));
+	}
+	//10
+	public String f10(String str1, String str2) {
+		if (str1.length() > str2.length())
+			return(str1);
+		else
+			return(str2);
+	}
+	//11
+	public boolean f11(String word, int length) {
+		if (word.length() == length)
+			return(true);
+		else
+			return(false);
+	}
+	//12
+	public boolean f12(int random1, int random2) {
+		if (random1 == random2)
+			return(true);
+		else
+			return(false);
+	}
+	//13
+	public boolean f13(char chr) {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter a 4 letter word: ");
+		String word1 = scan.next();
+		if (word1.indexOf(chr) == -1)
+			return(false);
+		else
+			return(true);
+	}
+	// main
+	public static void main(String[] args) {
+		Random r = new Random();
+		Functions func = new Functions();
+		f1();
+		f2(20);
+		f3(4,8);
+		f4(2,4,6);
+		f5(5);
+		f6(4,8);
+		f7("y","e","h");
+		f8(4,9,10);
+		double f_9 = func.f9("hello");
+		String f_10 = func.f10("six", "three");
+		boolean f_11 = func.f11("welcome", 1);
+		boolean f_12 = func.f12((r.nextInt(6)+1), (r.nextInt(6)+1));
+		boolean f_13 = func.f13('i');
+	}
+}
