@@ -1,0 +1,60 @@
+import java.util.Scanner;
+
+public class functions {
+	//1
+	public static void f1() {
+	Scanner scan = new Scanner(System.in);
+	System.out.println("Enter your name:");
+	String name = scan.next();
+	System.out.println("Shalom, " + name);
+	}
+	//2
+	public static void f2(int x) {
+		int y = x/5;
+		System.out.println(y);
+	}
+	//3
+	public static int f3(int _x,int _y) {
+		int z = _x * _y;
+		return(z);
+	}
+	//4
+	public static int f4(int q,int w, int e) {
+		int qwe = q * w * e;
+		System.out.println(qwe);
+		int t = qwe/3;
+		return(t);
+	}
+	//5
+	public static void f5(double radius) {
+		System.out.println("circle p = " + (2 * 3.14 * radius));
+		double radiusPow = Math.pow(radius,2);
+		System.out.println("circle s = " + (3.14 * radiusPow));
+	}
+	//6
+	public static double f6(int a, int b) {
+		double c_Pow = (Math.pow(a,2) + Math.pow(b,2));
+		double c = Math.sqrt(c_Pow);
+		return(c);
+	} 
+	//7
+	public static void f7(String I, String II, String III) {
+		System.out.println(III + II + I);
+	}
+	//8
+	public static double f8(int a1, int n, int d) {
+		double an = (a1 + (n - 1) * d);
+		return(an);
+	}
+	// main
+	public static void main(String[] args) {
+		f1();
+		f2(20);
+		f3(4,8);
+		f4(2,4,6);
+		f5(5);
+		f6(4,8);
+		f7("y","e","h");
+		f8(4,9,10);
+	}
+}
