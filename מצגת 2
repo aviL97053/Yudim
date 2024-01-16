@@ -1,0 +1,38 @@
+public class a {
+	
+	public static void main(String[] args) {
+//1		
+		int o = 2;
+		int u = 6;
+		int z = 4;
+		System.out.println(o);
+		System.out.println(u);
+		System.out.println(z);
+//2		
+		float num1 = 4;
+		int num2 = 5;
+		System.out.println(num1 + "   " + num2);
+//3		
+		char I = 'A';
+		char II = 'v';
+		char III = 'i';
+		System.out.println(I + II + III);
+//4		
+		int small = 3;
+		int big = 10;
+		System.out.println(small + "is less than" + big);
+//5		
+		int g = 5;
+		int n = 8;
+		int m = 2;
+		System.out.println("The avrage is" + (g+n+m));
+//6		
+		int a = 4;
+		int b = 8;
+		System.out.println("c square = " + ((a*a) + (b*b)));
+//7		
+		int x = 7;
+		int y = (x * 2) + 5;
+		System.out.println("y = " + y);
+	}
+}
